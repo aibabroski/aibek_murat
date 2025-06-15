@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+
+    <link rel="shortcut icon" type="x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <link rel="stylesheet" href="/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <a href="index.html#home"><img class="logo" src="/media/logo.png" alt="Your Logo"></a>
+        <div class="nav-menu">
+            <ul>
+                <i id="menu-close" class="fa fa-times" aria-hidden="true"></i>
+                <li><a href="/index.html#home">Home</a></li>
+                <li><a href="/index.html#about">About Me</a></li>
+                <li><a href="/index.html#portfolio">Portfolio</a></li>
+                <li><a href="/assignments/assignments.html#assignments">Assignments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="Menu Icon">
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <p>Have questions or want to collaborate? Reach out to me!</p>
+        <div class="contact-container">
+            <div class="getin">
+                <h2>Get in Touch</h2>
+                <div class="getindet">
+                    <h3>Email</h3>
+                    <div>
+                        <i class="fal fa-envelope-open-text get"></i>
+                        <p>aibek.murat@nu.edu.kz</p>
+                    </div>
+                    <h3>Social Media</h3>
+                    <div class="pro-links">
+                        <a href="https://www.instagram.com/aibabroski/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aibekmurat/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/aibabroski/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <h4>Send a Message</h4>
+                <div class="form-col">
+                    <input type="text" name="user_name" class="name" placeholder="Your Name" autocomplete="off" required>
+                </div>
+                <div class="form-col">
+                    <input type="email" name="user_email" class="email" placeholder="Your Email" autocomplete="off" required>
+                </div>
+                <div class="form-col">
+                    <textarea rows="8" cols="30" name="user_message" class="message" placeholder="Your Message" autocomplete="off" required></textarea>
+                </div>
+                <div class="form-col">
+                    <button type="button" onclick="sendEmail()">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About Me</a>
+                <a href="index.html#portfolio">Portfolio</a>
+                <a href="/assignments/assignments.html#assignments">Assignments</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/yourusername/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/yourusername/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.twitter.com/yourusername/" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 [Your Name]. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        $("#menu-btn").click(function () {
+            $(".navbar .nav-menu ul").addClass("active");
+        });
+        $("#menu-close").click(function () {
+            $(".navbar .nav-menu ul").removeClass("active");
+        });
+
+        function sendEmail() {
+            var name = document.querySelector('.name').value;
+            var email = document.querySelector('.email').value;
+            var message = document.querySelector('.message').value;
+            var subject = `New Message from ${name}`;
+            var body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+            var mailtoLink = `mailto:aibek.murat@nu.edu.kz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoLink;
+        }
+    </script>
+</body>
+
+</html>

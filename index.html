@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aibek Murat - Personal Website</title>
+
+    <link rel="shortcut icon" type="x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <a href="#home"><img class="logo" src="media/logo.png" alt="Aibek Murat Logo"></a>
+        <div class="nav-menu">
+            <ul>
+                <i id="menu-close" class="fa fa-times" aria-hidden="true"></i>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="assignments/assignments.html#Assignments">Assignments</a></li>
+                <li><a href="contact/contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="media/menu.png" alt="Menu Icon">
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section id="home">
+        <h2>Welcome to My Digital Space</h2>
+        <p>I'm Aibek Murat, a passionate Chemistry teacher and enthusiast in Mobile and Web development, exploring the art of storytelling in the digital age. Join me on this journey!</p>
+        <div class="btn">
+            <a class="blue" href="#about">Learn More About Me</a>
+            <a class="yellow" href="contact/contact.html">Get in Touch</a>
+        </div>
+        <div class="video-wrapper">
+            <video controls autoplay muted loop class="back-video">
+                <source src="media/background-video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Discover who I am and what drives my passion for teaching and development.</p>
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <h3>Who I Am</h3>
+                <p>I'm a dedicated Chemistry teacher, with a keen interest in Mobile and Web development. My journey began with a love for science and technology, which I now blend into my work. Currently working on my project namely "aibachem"</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa fa-pen" aria-hidden="true"></i>
+                <h3>My Teaching Journey</h3>
+                <p>From educating students in Chemistry to exploring digital solutions through Mobile apps and Web projects, I aim to inspire and innovate in both education and technology.</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa fa-lightbulb" aria-hidden="true"></i>
+                <h3>My Goals</h3>
+                <p>I strive to integrate my teaching expertise with development skills to create engaging educational tools and stories, connecting with learners and tech enthusiasts alike.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="assignments/assignments.html#Assignments">Assignments</a>
+                <a href="contact.html#contact">Contact</a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/yourusername/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/yourusername/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.twitter.com/yourusername/" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Aibek Murat. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        $("#menu-btn").click(function () {
+            $(".navbar .nav-menu ul").addClass("active");
+        });
+        $("#menu-close").click(function () {
+            $(".navbar .nav-menu ul").removeClass("active");
+        });
+    </script>
+</body>
+
+</html>
