@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="shortcut icon" type="x-icon" href="../images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../contact/contact.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
@@ -20,7 +20,7 @@
                 <i id="menu-close" class="fa fa-times" aria-hidden="true"></i>
                 <li><a href="../index.html#home">Home</a></li>
                 <li><a href="../index.html#about">About Me</a></li>
-                <li><a href="../index.html#portfolio">Portfolio</a></li>
+                <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
                 <li><a href="../assignments/assignments.html#assignments">Assignments</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -30,60 +30,113 @@
 
     <!-- Contact Section -->
     <section id="contact">
-        <h1>Contact Me</h1>
-        <p>Have questions or want to collaborate? Reach out to me!</p>
+        <header class="contact-header">
+            <h1>Contact Me</h1>
+            <p>Have questions or want to collaborate? Reach out to me!</p>
+        </header>
         <div class="contact-container">
-            <div class="getin">
-                <h2>Get in Touch</h2>
-                <div class="getindet">
-                    <h3>Email</h3>
-                    <div>
-                        <i class="fal fa-envelope-open-text get"></i>
-                        <p>aibek.murat@nu.edu.kz</p>
+            <!-- Horizontal Container for Contact Details and Send Message -->
+            <div class="contact-top">
+                <!-- Personal Information Section -->
+                <div class="personal-info">
+                    <h2>Contact Details</h2>
+                    <div class="info-details">
+                        <div class="contact-item">
+                            <h3>Name</h3>
+                            <p>Aibek Murat</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Phone</h3>
+                            <div class="contact-subitem">
+                                <i class="fas fa-phone-alt"></i>
+                                <p>+7 (705) 846 32 28</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Email</h3>
+                            <div class="contact-subitem">
+                                <i class="fal fa-envelope-open-text"></i>
+                                <p><a href="mailto:aibek.murat@nu.edu.kz">aibek.murat@nu.edu.kz</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Social Media</h3>
+                            <div class="pro-links contact-subitem">
+                                <a href="https://www.instagram.com/aibabroski/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/aibekmurat/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.youtube.com/aibabroski/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Social Media</h3>
-                    <div class="pro-links">
-                        <a href="https://www.instagram.com/aibabroski/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/aibekmurat/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.youtube.com/aibabroski/" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>
+                </div>
+
+                <!-- Send Message Section -->
+                <div class="message-form">
+                    <h2>Send a Message</h2>
+                    <form id="contact-form">
+                        <div class="form-col">
+                            <label for="user_name"></label>
+                            <input type="text" id="user_name" name="user_name" placeholder="Your Name" autocomplete="off" required>
+                        </div>
+                        <div class="form-col">
+                            <label for="user_email"></label>
+                            <input type="email" id="user_email" name="user_email" placeholder="Your Email" autocomplete="off" required>
+                        </div>
+                        <div class="form-col">
+                            <label for="user_message"></label>
+                            <textarea id="user_message" name="user_message" rows="8" placeholder="Your Message" autocomplete="off" required></textarea>
+                        </div>
+                        <div class="form-col">
+                            <button type="button" onclick="sendEmail()">Send Message</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="form">
-                <h4>Send a Message</h4>
-                <div class="form-col">
-                    <input type="text" name="user_name" class="name" placeholder="Your Name" autocomplete="off" required>
-                </div>
-                <div class="form-col">
-                    <input type="email" name="user_email" class="email" placeholder="Your Email" autocomplete="off" required>
-                </div>
-                <div class="form-col">
-                    <textarea rows="8" cols="30" name="user_message" class="message" placeholder="Your Message" autocomplete="off" required></textarea>
-                </div>
-                <div class="form-col">
-                    <button type="button" onclick="sendEmail()">Send Message</button>
+
+            <!-- Office Map and Address Section -->
+            <div class="office-location">
+                <h2>Visit My Office</h2>
+                <div class="location-details">
+                    <div class="contact-item">
+                        <h3>Address</h3>
+                        <p>Nazarbayev University, Kabanbay Batyr Ave 53 Block D6, Astana, Kazakhstan</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Map</h3>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1253.0465125201717!2d71.39611405484614!3d51.0882907080671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424585a45a9b3277%3A0xfe72ed70c2220e7!2zMzlRVys5SEcgQmxvY2sgMjMgRG9ybWl0b3J5LCDQv9GA0L7RgdC_LiDQmtCw0LHQsNC90LHQsNC5INCR0LDRgtGL0YDQsCA1Mywg0JDRgdGC0LDQvdCwIDAyMDAwMA!5e0!3m2!1sru!2skz!4v1750202702588!5m2!1sru!2skz" 
+                                width="600" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-links">
                 <a href="../index.html#home">Home</a>
                 <a href="../index.html#about">About Me</a>
-                <a href="../index.html#portfolio">Portfolio</a>
+                <a href="../portfolio/portfolio.html">Portfolio</a>
                 <a href="../assignments/assignments.html#assignments">Assignments</a>
                 <a href="#contact">Contact</a>
             </div>
-            <div class="footer-socials">
-                <a href="https://www.instagram.com/aibabroski/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/aibekmurat/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.twitter.com/aibabroski/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <div class="footer-social-links">
+                <a href="https://www.instagram.com/aibabroski/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/aibekmurat/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.twitter.com/aibabroski/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
         <div class="footer-bottom">
-            © 2025 Aibek Murat. All rights reserved.
+            <p>© 2025 Aibek Murat. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -96,9 +149,9 @@
         });
 
         function sendEmail() {
-            var name = document.querySelector('.name').value;
-            var email = document.querySelector('.email').value;
-            var message = document.querySelector('.message').value;
+            var name = document.querySelector('#user_name').value;
+            var email = document.querySelector('#user_email').value;
+            var message = document.querySelector('#user_message').value;
             var subject = `New Message from ${name}`;
             var body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
             var mailtoLink = `mailto:aibek.murat@nu.edu.kz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;

@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Global Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(35, 35, 85);
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(46, 46, 59);
+}
+
+p {
+    font-size: 1rem;
+    color: rgb(70, 70, 90);
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.navbar .logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar .nav-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-menu ul li {
+    margin-left: 30px;
+}
+
+.navbar .nav-menu ul li a {
+    color: rgb(23, 23, 106);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-menu ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #fdc93b;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-menu ul li a:hover::after {
+    width: 100%;
+}
+
+.navbar .nav-menu ul li a:hover {
+    color: #fdc93b;
+}
+
+#menu-btn, #menu-close {
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Contact Section */
+#contact {
+    padding: 8vw;
+    text-align: center;
+    background-color: #f9f9ff;
+}
+
+#contact .contact-header {
+    margin-bottom: 2rem;
+}
+
+#contact .contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact .contact-top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+#contact .personal-info,
+#contact .message-form,
+#contact .office-location {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#contact .info-details .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#contact .info-details .contact-subitem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+#contact .info-details i {
+    font-size: 1.2rem;
+    color: rgb(21, 21, 100);
+}
+
+#contact .info-details p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+#contact .info-details p a {
+    color: rgb(21, 21, 100);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact .info-details p a:hover {
+    color: #fdc93b;
+}
+
+#contact .pro-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#contact .pro-links a {
+    font-size: 1.5rem;
+    color: rgb(21, 21, 100);
+    padding: 0.5rem;
+    border: 1px solid rgb(21, 21, 100);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#contact .pro-links a:hover {
+    background-color: rgb(21, 21, 100);
+    color: #ffffff;
+}
+
+#contact .message-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact .message-form label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+#contact .message-form input,
+#contact .message-form textarea {
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #f7f6fa;
+    color: rgb(70, 70, 90);
+    outline: none;
+}
+
+#contact .message-form textarea {
+    resize: vertical;
+}
+
+#contact .message-form button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 25px;
+    background-color: rgb(21, 21, 100);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#contact .message-form button:hover {
+    background-color: #fdc93b;
+    color: #ffffff;
+}
+
+#contact .office-location .location-details .contact-item {
+    align-items: center;
+}
+
+#contact .office-location p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#contact .map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+#contact .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(23, 23, 106);
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fdc93b;
+}
+
+.footer-social-links a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-social-links a:hover {
+    color: #fdc93b;
+}
+
+.footer-bottom {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1rem;
+}
+
+.footer-bottom p{
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 769px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .navbar .logo {
+        width: 120px;
+    }
+
+    #menu-btn, #menu-close {
+        display: block;
+    }
+
+    #menu-close {
+        font-size: 1.6rem;
+        color: #ffffff;
+        padding: 20px 0 20px 20px;
+    }
+
+    .navbar .nav-menu ul {
+        position: fixed;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 100vh;
+        background: rgba(17, 20, 104, 0.9);
+        backdrop-filter: blur(5px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: right 0.3s ease;
+    }
+
+    .navbar .nav-menu ul.active {
+        right: 0;
+    }
+
+    .navbar .nav-menu ul li {
+        margin: 20px 0 20px 40px;
+    }
+
+    .navbar .nav-menu ul li a {
+        color: #ffffff;
+    }
+
+    #contact {
+        padding: 12vw 4vw;
+    }
+
+    #contact h1 {
+        font-size: 2rem;
+    }
+
+    #contact p {
+        font-size: 1rem;
+    }
+
+    #contact .contact-top {
+        grid-template-columns: 1fr;
+    }
+
+    #contact .personal-info,
+    #contact .message-form,
+    #contact .office-location {
+        width: 100%;
+    }
+
+    #contact .message-form button {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact h1 {
+        font-size: 1.8rem;
+    }
+
+    #contact .personal-info,
+    #contact .message-form,
+    #contact .office-location {
+        padding: 1.5rem;
+    }
+
+    #contact h3 {
+        font-size: 1.1rem;
+    }
+
+    #contact p {
+        font-size: 0.9rem;
+    }
+
+    #contact .personal-info h2,
+    #contact .message-form h2,
+    #contact .office-location h2 {
+        font-size: 1.8rem;
+    }
+
+    #contact .message-form input,
+    #contact .message-form textarea {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    #contact .message-form button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .footer-links a {
+        font-size: 0.9rem;
+    }
+
+    .footer-social-links a {
+        font-size: 1.2rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+}
