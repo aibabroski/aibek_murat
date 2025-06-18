@@ -1,27 +1,40 @@
-Welcome to My Personal Portfolio!
-Hi there! 👋 Welcome to my personal portfolio website. I'm Aibek Murat, and this site showcases my work, skills, and projects as a student at Nazarbayev University. Whether you're here to explore my portfolio, check out my assignments, or get in touch, I'm excited to share my journey with you!
-About the Project
-This is a responsive, modern portfolio website built with HTML, CSS, and JavaScript (with jQuery). It features:
+# Welcome to My Personal Portfolio! 🌟
 
-A homepage with a video background and introduction.
-An "About Me" section highlighting my background.
-A portfolio showcasing my projects.
-An assignments page with downloadable PDFs.
-A contact page to reach out via email or visit my office.
+Hi there! 👋 I'm Aibek Murat, a student at Nazarbayev University, and this is my personal portfolio website. Explore my work, skills, and projects, or reach out to collaborate!
 
-How to View
+## About the Project 📋
+This is a responsive, modern portfolio site built with:
 
-Clone or download this repository.
-Open index.html in a web browser to start exploring.
-Navigate through sections using the menu or visit contact.html to get in touch.
+- HTML5 and CSS3 for structure and style
+- JavaScript with jQuery for interactivity
+- Font Awesome for icons
 
-Contact Me
-Have questions or want to collaborate? Reach out!
+### Key Features:
+- Homepage with a video background
+- About Me section for my background
+- Portfolio showcasing my projects
+- Assignments page with downloadable PDFs
+- Contact page to get in touch
 
-Email: aibek.murat@nu.edu.kz
-Phone: +7 (705) 846 32 28
-Social Media: Instagram | LinkedIn | YouTube
-Office: Nazarbayev University, Kabanbay Batyr Ave 53 Block D6, Astana, Kazakhstan
+## How to View 🚀
+1. Clone or download this repository.
+2. Open `index.html` in a web browser.
+3. Navigate using the menu or visit `contact.html` to connect.
 
-Thanks for visiting! 😊 I hope you enjoy exploring my portfolio.
+## Contact Me 📬
+Got questions or ideas? Reach out!
+
+- **Email:** [aibek.murat@nu.edu.kz](mailto:aibek.murat@nu.edu.kz)
+- **Phone:** +7 (705) 846 32 28
+- **Social Media:**
+  - [Instagram](#)
+  - [LinkedIn](#)
+  - [YouTube](#)
+
+**Office:**  
+Nazarbayev University  
+Kabanbay Batyr Ave 53 Block D6  
+Astana, Kazakhstan  
+
+Thanks for visiting! 😊 Enjoy exploring my portfolio!  
 © 2025 Aibek Murat. All Rights Reserved.
