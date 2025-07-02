@@ -354,6 +354,22 @@ p {
   border: none;
 }
 
+h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(23, 23, 106);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+
+#assignments .assignment-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+
 
 /* Footer */
 footer {
